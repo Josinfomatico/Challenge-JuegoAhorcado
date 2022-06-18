@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="instrucciones" >
+        <h1>Juego del Ahorcado</h1>
+        <p class="parrafo">Instrucciones</p>
+        <p class="parrafo">1. Inicie el juego pulsando el botón "Iniciar"</p>
+        <p class="parrafo">2. Solo puede utilizar el teclado del dispositivo que este utilizando"</p>
+        <p class="parrafo">3. Puede terminar el juego y regresar al inicio pulsando el boton "Me rindo"</p>
+        <p class="parrafo">4. Si lo desea, puede agregar mas palabras al juego"</p>
+        <p class="parrafo">¡¡¡DIVIERTETE!!!</p>
+    </div>
+
+    <div class="botones-inicio">
+        <button class="btn-inicio" id="btn-iniciar">Iniciar</button>
+        <button class="btn-inicio" id="btn-agregar">Nueva Palabra</button>
+    </div>
+
+    <form id=input class="nuevas-palabras" style="display: none">
+        <input name="nuevo" type="text" class="input-palabras" id="agregar-palabra" placeholder="Ingrese una nueva palabra">
+        <button class="palabras" id="btn-palabra">Agregar palabra</button>
+        <button class="palabras" id="btn-volver">Volver</button>
+    </form>
+
+    <div class="pizarra-acciones" style="display: none">
+        <canvas width="600" height="400"></canvas>
+        <div class="acciones">
+            <span class="palabra"></span>
+
+            <div class="keywords">
+                <ul id="lista-letras">
+                    <li class="letra" id="A">A</li>
+                    <li class="letra" id="B">B</li>
+                    <li class="letra" id="C">C</li>
+                    <li class="letra" id="D">D</li>
+                    <li class="letra" id="E">E</li>
+                    <li class="letra" id="F">F</li>
+                    <li class="letra" id="G">G</li>
+                    <li class="letra" id="H">H</li>
+                    <li class="letra" id="I">I</li>
+                    <li class="letra" id="J">J</li>
+                    <li class="letra" id="K">K</li>
+                    <li class="letra" id="L">L</li>
+                    <li class="letra" id="M">M</li>
+                    <li class="letra" id="N">N</li>
+                    <li class="letra" id="Ñ">Ñ</li>
+                    <li class="letra" id="O">O</li>
+                    <li class="letra" id="P">P</li>
+                    <li class="letra" id="Q">Q</li>
+                    <li class="letra" id="R">R</li>
+                    <li class="letra" id="S">S</li>
+                    <li class="letra" id="T">T</li>
+                    <li class="letra" id="U">U</li>
+                    <li class="letra" id="V">V</li>
+                    <li class="letra" id="W">W</li>
+                    <li class="letra" id="X">X</li>
+                    <li class="letra" id="Y">Y</li>
+                    <li class="letra" id="Z">Z</li>
+                </ul>
+            </div>
+            <span class="intentos-restantes" id="avisos"></span>
+            <div class="botones-juego">
+                <button class="btn-jugar">Juego Nuevo</button>
+                <button class="btn-rendirse">Me rindo</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>&#169; Joseph Ortiz - 2022</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/josephbe_21/"><img class="redeSociales" src="img/instagram.png"></a>
+            <a href="https://www.linkedin.com/in/joseph-ortiz-681a74233/"><img class="redeSociales" src="img/linkedin.png"></a>
+            <a href="https://github.com/Josinfomatico"><img class="redeSociales" src="img/github.png"></a>
+        </div>
+    </footer>
+    <script src="js/canvas.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
